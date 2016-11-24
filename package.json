@@ -1,0 +1,25 @@
+{
+  "name": "bable-test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www --exec babel-node --presets es2015,stage-2",
+    "compile": "babel -d app/ src/",
+    "publish": "npm run compile",
+    "clean": "rm -rf app"
+  },
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "ejs": "~2.5.2",
+    "express": "~4.14.0",
+    "morgan": "~1.7.0",
+    "nodemon": "^1.11.0",
+    "serve-favicon": "~2.3.0"
+  }
+}
